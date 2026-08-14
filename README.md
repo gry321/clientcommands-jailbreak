@@ -1,6 +1,12 @@
 # clientcommands
 Adds several useful client-side commands to Minecraft
 
+# Safe using
+It is jailbreak mode. Please don't use it in Server which is not allowed.
+It removed some required permissions.
+免责声明：任何后果与作者无关。
+
+
 ## Social
 Discord: https://discord.gg/Jg7Bun7
 Patreon: https://www.patreon.com/earthcomputer

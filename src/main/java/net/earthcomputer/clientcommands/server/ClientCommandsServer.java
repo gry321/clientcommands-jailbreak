@@ -35,17 +35,17 @@ public class ClientCommandsServer implements ModInitializer {
         ServerPlayNetworking.registerGlobalReceiver(OptInPayload.TYPE, (_, _) -> {});
     }
 
-    public static void requirePrivileges() throws CommandSyntaxException {
-        if (ClientPlayNetworking.canSend(OptInPayload.TYPE)) {
-            return;
-        }
-
-        LocalPlayer player = Minecraft.getInstance().player;
-        if (player != null && player.permissions().hasPermission(Permissions.COMMANDS_GAMEMASTER)) {
-            return;
-        }
-
-        throw MUST_BE_INSTALLED_EXCEPTION.create();
+    public static void requirePrivileges() {
+//        if (ClientPlayNetworking.canSend(OptInPayload.TYPE)) {
+//            return;
+//        }
+//
+//        LocalPlayer player = Minecraft.getInstance().player;
+//        if (player != null && player.permissions().hasPermission(Permissions.COMMANDS_GAMEMASTER)) {
+//            return;
+//        }
+//
+//        throw MUST_BE_INSTALLED_EXCEPTION.create();
     }
 
     private enum OptInPayload implements CustomPacketPayload {

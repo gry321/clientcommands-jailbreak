@@ -128,9 +128,9 @@ public class KitCommand {
     }
 
     private static int load(FabricClientCommandSource source, String name, boolean override) throws CommandSyntaxException {
-        if (!source.getPlayer().isCreative()) {
-            throw NOT_CREATIVE_EXCEPTION.create();
-        }
+//        if (!source.getPlayer().isCreative()) {
+//            throw NOT_CREATIVE_EXCEPTION.create();
+//        }
 
         ListTag kit = kits.get(name);
         if (kit == null) {

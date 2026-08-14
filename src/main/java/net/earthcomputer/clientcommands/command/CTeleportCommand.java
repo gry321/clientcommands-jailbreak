@@ -25,9 +25,9 @@ public class CTeleportCommand {
     }
 
     private static int teleport(FabricClientCommandSource source, UUID uuid) throws CommandSyntaxException {
-        if (!source.getPlayer().isSpectator()) {
-            throw NOT_SPECTATOR_EXCEPTION.create();
-        }
+//        if (!source.getPlayer().isSpectator()) {
+//            throw NOT_SPECTATOR_EXCEPTION.create();
+//        }
 
         ClientPacketListener packetListener = source.getClient().getConnection();
         assert packetListener != null;

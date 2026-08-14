@@ -29,6 +29,7 @@ public final class UnsafeUtils {
         }
     });
 
+    @SuppressWarnings("removal")
     private static final MethodHandles.@Nullable Lookup IMPL_LOOKUP = Util.make(() -> {
         try {
             //noinspection ConstantValue

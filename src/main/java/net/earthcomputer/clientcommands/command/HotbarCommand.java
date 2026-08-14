@@ -53,9 +53,9 @@ public class HotbarCommand {
         Minecraft minecraft = source.getClient();
 
         LocalPlayer player = source.getPlayer();
-        if (!player.getAbilities().instabuild) {
-            throw NOT_CREATIVE_EXCEPTION.create();
-        }
+//        if (!player.getAbilities().instabuild) {
+//            throw NOT_CREATIVE_EXCEPTION.create();
+//        }
 
         HotbarManager manager = minecraft.getHotbarManager();
         Hotbar hotbar = manager.get(index - 1);
